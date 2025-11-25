@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+:root {
+    font-size: 16px;
+}
+.height-transition {
+    interpolate-size: allow-keywords;
+    transition: height 0.3s ease-in-out;
+}
+.text-transition {
+    animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    90% {opacity: 1;}
+    
+}
