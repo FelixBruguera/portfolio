@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Movie Tracker TMDB",
+        "description": "A web app for searching, tracking and rating movies and TV Shows",
+        "link": "https://movietracker.felixbruguera0.workers.dev/",
+        "repo": "https://github.com/FelixBruguera/movietracker-tmdb",
+        "features": [
+            {
+                "title": "Discovery, filters and sorting",
+                "content": "You can filter media by release year, average TMDB rating, genre, language, streaming service or keywords and sort by TMDB rating, vote count or popularity"
+            },
+            {
+                "title": "Saving searches",
+                "content": "Save filter combinations"
+            },
+            {
+                "title": "Reviews",
+                "content": "Rate media on a 10-point scale with optional written reviews"
+            },
+            {
+                "title": "Diary",
+                "content": "Track the movies you've watch"
+            },
+            {
+                "title": "Lists",
+                "content": "Public and private media collections"
+            },
+            {
+                "title": "Watchlists",
+                "content": "A list that removes media after you log or review it"
+            },
+            {
+                "title": "Stats",
+                "content": "Charts and lists with different stats about the user's ratings and viewing habits"
+            }
+        ],
+        "stack": [
+            "Hono",
+            "React",
+            "Tailwind",
+            "Sqlite",
+            "Vitest",
+            "Playwright"
+        ],
+        "icon": "/movietracker-tmdb/icon.png",
+        "screenshots": [
+            "movietracker-tmdb/wide.png",
+            "movietracker-tmdb/media.png",
+            "movietracker-tmdb/list.png",
+            "movietracker-tmdb/diary.png",
+            "movietracker-tmdb/stats.png"
+        ]
+    }
+]
