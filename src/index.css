@@ -5,10 +5,10 @@
 }
 .height-transition {
     interpolate-size: allow-keywords;
-    transition: height 0.3s ease-in-out;
+    transition: height 0.2s ease-in-out;
 }
 .text-transition {
-    animation: fade-in 0.3s ease-in-out;
+    animation: fade-in 0.2s ease-in-out;
 }
 
 @keyframes fade-in {
