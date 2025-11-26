@@ -6,7 +6,7 @@ import ImageCarousel from "./ImageCarousel"
 
 const Project = ({ data, width = "full" }) => {
     return (
-        <div className={`${width === "full" ? "w-full" : "w-1/2 mx-auto"} flex justify-between items-start`}>
+        <div className={`${width === "full" ? "w-full" : "w-1/2 mx-auto"} flex justify-between items-start pb-20 border-t border-t-white/10 pt-5`}>
             <div className={`${width === "full" ? "w-1/2" : "w-1/2 mx-auto"} flex flex-col gap-3`}>
                 <div className="flex items-center gap-2">
                     <img src={data.icon} className="size-12"/>
