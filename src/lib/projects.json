@@ -3,7 +3,7 @@
         "name": "Movie Tracker TMDB",
         "description": "A web app for searching, tracking and rating movies and TV Shows",
         "link": "https://movietracker.felixbruguera0.workers.dev/",
-        "repo": "https://github.com/FelixBruguera/movietracker-tmdb",
+        "repo": "https://github.com/FelixBruguera/openchat",
         "features": [
             {
                 "title": "Discovery, filters and sorting",
@@ -49,6 +49,41 @@
             "movietracker-tmdb/list.png",
             "movietracker-tmdb/diary.png",
             "movietracker-tmdb/stats.png"
+        ]
+    },
+        {
+        "name": "Open Chat",
+        "description": "LLM chat client with a responsive interface and local data storage",
+        "link": "https://openchat-azl.pages.dev/",
+        "repo": "https://github.com/FelixBruguera/openchat",
+        "features": [
+            {
+                "title": "Local data",
+                "content": "Chats are saved locally in IndexedDB"
+            },
+            {
+                "title": "Markdown Rendering",
+                "content": "Code blocks with syntax highlighting, tables, math formulas"
+            },
+            {
+                "title": "Model Selection",
+                "content": "Choose from any model available on OpenRouter, mark your favorites, and set a default model"
+            },
+            {
+                "title": "Chat Branching",
+                "content": "Create chat branches from any message so you can explore different conversation paths"
+            }
+        ],
+        "stack": [
+            "React",
+            "Tailwind",
+            "IndexedDB"
+        ],
+        "icon": "/openchat/icon.png",
+        "screenshots": [
+            "openchat/models.png",
+            "openchat/code.png",
+            "openchat/table.png"
         ]
     }
 ]
