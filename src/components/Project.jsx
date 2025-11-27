@@ -13,7 +13,7 @@ const Project = ({ data, width = "full" }) => {
                     <h1 className="text-3xl font-bold">{data.name}</h1>
                     <div className="flex items-center gap-2 ml-auto">
                         <a href={data.link} target="_blank"><Button variant="dark"><ExternalLink className="size-4"/></Button></a>
-                        <a href={data.repo} target="_blank"><Button><img src="/icons/github.svg" className="size-5"/></Button></a>
+                        <a href={data.repo} target="_blank"><Button><img src="/icons/Github.svg" className="size-5"/></Button></a>
                     </div>
                 </div>
                 <p className={`${width === "full" ? "max-w-8/10" : "max-w-9/10"} text-justify text-white/85`}>{data.description}</p>
