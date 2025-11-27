@@ -1,6 +1,6 @@
-const Section = ({ children, height = "h-dvh" }) => {
+const Section = ({ children, height = "h-dvh", width="w-dvw" }) => {
     return (
-        <div className={`${height} w-dvw max-w-400 mx-auto px-5`}>
+        <div className={`${height} ${width} max-w-400 mx-auto px-5`}>
             {children}
         </div>
     )

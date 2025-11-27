@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 const SmallImage = ({ index, image, isSelected, setSelectedImage }) => {
     return (
         <li
-        className={`flex w-full max-w-30 border-2 border-transparent hover:border-blue-400 rounded-lg transition-colors ${isSelected && "border-blue-400!"}` }
+        className={`flex w-full max-w-30 border-3 border-transparent hover:border-blue-400 rounded-lg transition-colors ${isSelected && "border-blue-400!"}` }
         onClick={() =>
             document.startViewTransition({
             update: () => setSelectedImage(index),
@@ -13,7 +13,7 @@ const SmallImage = ({ index, image, isSelected, setSelectedImage }) => {
         }
         >
         <img
-            className="aspect-auto h-15 w-full rounded-sm hover:cursor-pointer"
+            className="aspect-auto w-full rounded-sm hover:cursor-pointer"
             src={image}
             loading="lazy"
         />
@@ -52,7 +52,7 @@ const ImageCarousel = ({ images, alt }) => {
   const previousButtonHidden = selectedImage === 0;
   const nextButtonHidden = selectedImage >= images.length - 1;
   return (
-    <div className="w-1/2 ">
+    <div className="w-full">
       <dialog ref={bigImg} className="m-auto bg-transparent backdrop:backdrop-blur-sm backdrop:bg-black/50">
         <button onClick={() => bigImg.current.close()} title="Close" aria-label="Close">
             <X
@@ -90,7 +90,7 @@ const ImageCarousel = ({ images, alt }) => {
         }}
       >
         <img
-          className="aspect-auto w-full rounded-lg hover:cursor-pointer"
+          className="aspect-auto size-fit rounded-lg hover:cursor-pointer"
           src={images[selectedImage]}
           loading="lazy"
           alt={alt}

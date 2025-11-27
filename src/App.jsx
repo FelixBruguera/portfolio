@@ -13,11 +13,15 @@ function App() {
       </Section>
       <section id='projects'>
         <h1 className='text-4xl text-center font-bold mb-10'>My Projects</h1>
-        {projects.map(project =>
-          <Section height='h-dvh/2'>
-            <Project data={project} width={project.width}/>
-          </Section>
-        )}
+        <ul className='flex flex-wrap'>
+          {projects.map(project =>
+            <li className={`${project.width === "half" ? "w-1/2" : "mx-auto"}`}>
+              <Section height='h-dvh/2' width={project.width === "half" && 'w-7/10'}>
+                <Project data={project} width={project.width}/>
+              </Section>
+            </li>
+          )}
+        </ul>
       </section>
     </div>
   )
