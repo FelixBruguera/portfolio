@@ -85,5 +85,88 @@
             "openchat/code.png",
             "openchat/table.png"
         ]
+    },
+        {
+        "name": "React Shop",
+        "description": "An e-commerce music store",
+        "link": "https://react-shop-5lc.pages.dev/",
+        "repo": "https://github.com/FelixBruguera/react-shop",
+        "features": [
+            {
+                "title": "Filtering and sorting",
+                "content": "Filter products by category and price, sorting by price, name and category"
+            },
+            {
+                "title": "Cart management",
+                "content": "Add and remove products from your cart"
+            },
+            {
+                "title": "Product details",
+                "content": "Examine product details and images"
+            },
+            {
+                "title": "Checkout and receipt",
+                "content": "The checkout form validates credit card numbers and generates a receipt"
+            }
+        ],
+        "stack": [
+            "React",
+            "CSS",
+            "Cloudflare Functions",
+            "Vitest"
+        ],
+        "icon": "/react-shop/icon.png",
+        "screenshots": [
+            "/react-shop/products.png",
+            "/react-shop/product.png",
+            "/react-shop/product image.png",
+            "/react-shop/cart.png",
+            "/react-shop/checkout.png"
+        ],
+        "width":"half"
+    },
+        {
+        "name": "Movie Tracker MongoDB",
+        "description": "A web app for searching, tracking and rating movies. This version uses a MongoDB sample dataset with 70k comments, 20k movies and 40k diary logs",
+        "link": "https://react-shop-5lc.pages.dev/",
+        "repo": "https://github.com/FelixBruguera/react-shop",
+        "features": [
+            {
+                "title": "Search and Filters",
+                "content": "You can filter movies by release year, rating, genre, language, cast or directors"
+            },
+            {
+                "title": "Reviews",
+                "content": "Rate media on a 10-point scale with optional written reviews"
+            },
+            {
+                "title": "Diary",
+                "content": "Track the movies you've watch"
+            },
+            {
+                "title": "Lists",
+                "content": "Public and private media collections"
+            },
+            {
+                "title": "Stats",
+                "content": "View your activity with charts like average rating by decade, genre and director, movies watched by year or your most watched genres, actors and directors"
+            }
+        ],
+        "stack": [
+            "Next",
+            "MongoDB",
+            "Tailwind",
+            "Vitest",
+            "Playwright"
+        ],
+        "icon": "/movietracker-mongodb/icon.png",
+        "screenshots": [
+            "movietracker-mongodb/movies.png",
+            "movietracker-mongodb/movie details.png",
+            "movietracker-mongodb/filters.png",
+            "movietracker-mongodb/stats.png",
+            "movietracker-mongodb/profile.png"
+        ],
+        "width": "half"
     }
 ]
