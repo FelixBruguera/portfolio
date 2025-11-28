@@ -51,7 +51,83 @@
             "movietracker-tmdb/stats.png"
         ]
     },
+      {
+        "name": "Blog list",
+        "description": "A full stack web app for saving links to blog posts",
+        "link": "https://bloglist-5rlb.onrender.com/",
+        "repo": "https://github.com/FelixBruguera/fullstackopen/tree/main/part7/bloglist",
+        "features": [
+            {
+                "title": "Authentication",
+                "content": "JSON Web Token based authentication. The main content of the page is only visible to logged in users"
+            },
+            {
+                "title": "Blog management",
+                "content": "Users can add links to blogs, like blogs or delete the blogs they have created"
+            },
+            {
+                "title": "Comments",
+                "content": "Users can add comments to any blog post"
+            }
+        ],
+        "stack": [
+            "React",
+            "Express",
+            "MongoDB",
+            "Tailwind",
+            "Playwright"
+        ],
+        "icon": "/bloglist/icon.png",
+        "screenshots": [
+            "bloglist/blogs.png",
+            "bloglist/blog.png",
+            "bloglist/deleting.png",
+            "bloglist/profile.png"
+        ]
+    },
         {
+        "name": "React Shop",
+        "description": "An e-commerce music store",
+        "link": "https://react-shop-5lc.pages.dev/",
+        "repo": "https://github.com/FelixBruguera/react-shop",
+        "features": [
+            {
+                "title": "Filtering and sorting",
+                "content": "Filter products by category and price, sorting by price, name and category"
+            },
+            {
+                "title": "Pagination",
+                "content": "The API implements pagination and returns 20 items per page"
+            },
+            {
+                "title": "Cart management",
+                "content": "Add and remove products from your cart"
+            },
+            {
+                "title": "Product details",
+                "content": "Examine product details and images"
+            },
+            {
+                "title": "Checkout and receipt",
+                "content": "The checkout form validates credit card numbers and generates a receipt"
+            }
+        ],
+        "stack": [
+            "React",
+            "Cloudflare Functions",
+            "CSS",
+            "Vitest"
+        ],
+        "icon": "/react-shop/icon.png",
+        "screenshots": [
+            "/react-shop/products.png",
+            "/react-shop/product.png",
+            "/react-shop/product image.png",
+            "/react-shop/cart.png",
+            "/react-shop/checkout.png"
+        ]
+    },
+    {
         "name": "Open Chat",
         "description": "LLM chat client with a responsive interface and local data storage",
         "link": "https://openchat-azl.pages.dev/",
@@ -84,52 +160,14 @@
             "openchat/models.png",
             "openchat/code.png",
             "openchat/table.png"
-        ]
-    },
-        {
-        "name": "React Shop",
-        "description": "An e-commerce music store",
-        "link": "https://react-shop-5lc.pages.dev/",
-        "repo": "https://github.com/FelixBruguera/react-shop",
-        "features": [
-            {
-                "title": "Filtering and sorting",
-                "content": "Filter products by category and price, sorting by price, name and category"
-            },
-            {
-                "title": "Cart management",
-                "content": "Add and remove products from your cart"
-            },
-            {
-                "title": "Product details",
-                "content": "Examine product details and images"
-            },
-            {
-                "title": "Checkout and receipt",
-                "content": "The checkout form validates credit card numbers and generates a receipt"
-            }
         ],
-        "stack": [
-            "React",
-            "CSS",
-            "Cloudflare Functions",
-            "Vitest"
-        ],
-        "icon": "/react-shop/icon.png",
-        "screenshots": [
-            "/react-shop/products.png",
-            "/react-shop/product.png",
-            "/react-shop/product image.png",
-            "/react-shop/cart.png",
-            "/react-shop/checkout.png"
-        ],
-        "width":"half"
+        "width": "half"
     },
         {
         "name": "Movie Tracker MongoDB",
         "description": "A web app for searching, tracking and rating movies. This version uses a MongoDB sample dataset with 70k comments, 20k movies and 40k diary logs",
-        "link": "https://react-shop-5lc.pages.dev/",
-        "repo": "https://github.com/FelixBruguera/react-shop",
+        "link": "https://movietracker-flax.vercel.app/",
+        "repo": "https://github.com/FelixBruguera/movietracker",
         "features": [
             {
                 "title": "Search and Filters",
@@ -166,6 +204,42 @@
             "movietracker-mongodb/filters.png",
             "movietracker-mongodb/stats.png",
             "movietracker-mongodb/profile.png"
+        ],
+        "width": "half"
+    },
+        {
+        "name": "Where's Waldo?",
+        "description": "A photo-tagging game",
+        "link": "https://wheres-waldo.felixbruguera0.workers.dev/",
+        "repo": "https://github.com/FelixBruguera/wheres-waldo",
+        "stack": [
+            "React",
+            "Sqlite",
+            "Tailwind",
+            "Vitest"
+        ],
+        "icon": "/wheres-waldo/icon.png",
+        "screenshots": [
+            "wheres-waldo/game.png",
+            "wheres-waldo/instructions.png",
+            "wheres-waldo/leaderboard.png"
+        ],
+        "width": "half"
+    },
+        {
+        "name": "Memory Card",
+        "description": "A Memory Card game",
+        "link": "https://memory-18o.pages.dev/",
+        "repo": "https://github.com/FelixBruguera/memory",
+        "stack": [
+            "React",
+            "CSS"
+        ],
+        "icon": "/memory/icon.png",
+        "screenshots": [
+            "memory/game.png",
+            "memory/difficulty.png",
+            "memory/timer.png"
         ],
         "width": "half"
     }
