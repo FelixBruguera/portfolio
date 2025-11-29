@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
     font-size: 16px;
+    font-family: "Inter";
+}
+h1 {
+    font-family: "Roboto Condensed";
 }
 .height-transition {
     interpolate-size: allow-keywords;
@@ -14,5 +19,4 @@
 @keyframes fade-in {
     0% {opacity: 0;}
     90% {opacity: 1;}
-    
 }

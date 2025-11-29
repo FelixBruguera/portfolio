@@ -100,7 +100,7 @@ const ImageCarousel = ({ images, alt }) => {
         <ul className="flex items-start justify-start p-0 w-fit max-w-7/10 mt-2 mx-auto gap-1">
           {images.map((image, index) => {
             return (
-              <SmallImage image={image} index={index} isSelected={selectedImage === index} setSelectedImage={setSelectedImage}/>
+              <SmallImage key={index} image={image} index={index} isSelected={selectedImage === index} setSelectedImage={setSelectedImage}/>
             );
           })}
         </ul>

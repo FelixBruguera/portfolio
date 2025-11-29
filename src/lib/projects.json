@@ -120,8 +120,8 @@
         ],
         "icon": "/react-shop/icon.png",
         "screenshots": [
-            "/react-shop/products.png",
             "/react-shop/product.png",
+            "/react-shop/products.png",
             "/react-shop/product image.png",
             "/react-shop/cart.png",
             "/react-shop/checkout.png"

@@ -1,5 +1,6 @@
 import Project from './components/Project'
 import Section from './components/Section'
+import Separator from './components/Separator'
 import projects from "./lib/projects.json"
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
         <h1 className='text-4xl text-center font-bold mb-10'>My Projects</h1>
         <ul className='flex flex-wrap'>
           {projects.map(project =>
-            <li className={`${project.width === "half" ? "w-1/2" : "mx-auto"}`}>
+            <li key={project.name} className={`${project.width === "half" ? "w-1/2" : "mx-auto"}`}>
               <Section height='h-dvh/2' width={project.width === "half" && 'w-7/10'}>
                 <Project data={project} width={project.width}/>
+                <Separator />
               </Section>
             </li>
           )}
