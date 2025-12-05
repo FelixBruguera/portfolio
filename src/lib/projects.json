@@ -1,246 +1,292 @@
-[
-    {
-        "name": "Movie Tracker TMDB",
-        "description": "A web app for searching, tracking and rating movies and TV Shows",
-        "link": "https://movietracker.felixbruguera0.workers.dev/",
-        "repo": "https://github.com/FelixBruguera/openchat",
-        "features": [
+{
+    "full": [
+        {
+            "name": "Movie Tracker TMDB",
+            "description": "A web app for searching, tracking and rating movies and TV Shows",
+            "link": "https://movietracker.felixbruguera0.workers.dev/",
+            "repo": "https://github.com/FelixBruguera/openchat",
+            "features": [
+                {
+                    "title": "Discovery, filters and sorting",
+                    "content": "You can filter media by release year, average TMDB rating, genre, language, streaming service or keywords and sort by TMDB rating, vote count or popularity"
+                },
+                {
+                    "title": "Saving searches",
+                    "content": "Save filter combinations"
+                },
+                {
+                    "title": "Reviews",
+                    "content": "Rate media on a 10-point scale with optional written reviews"
+                },
+                {
+                    "title": "Diary",
+                    "content": "Track the movies you've watch"
+                },
+                {
+                    "title": "Lists",
+                    "content": "Public and private media collections"
+                },
+                {
+                    "title": "Watchlists",
+                    "content": "A list that removes media after you log or review it"
+                },
+                {
+                    "title": "Stats",
+                    "content": "Charts and lists with different stats about the user's ratings and viewing habits"
+                }
+            ],
+            "stack": [
+                "Hono",
+                "React",
+                "Tailwind",
+                "Sqlite",
+                "Vitest",
+                "Playwright"
+            ],
+            "icon": "/movietracker-tmdb/icon.png",
+            "screenshots": [
+                "movietracker-tmdb/wide.png",
+                "movietracker-tmdb/media.png",
+                "movietracker-tmdb/list.png",
+                "movietracker-tmdb/diary.png",
+                "movietracker-tmdb/stats.png"
+            ],
+            "mobileScreenshots": [
+                "movietracker-tmdb/mobile.png",
+                "movietracker-tmdb/mobile details.png",
+                "movietracker-tmdb/mobile list.png",
+                "movietracker-tmdb/mobile reviews.png",
+                "movietracker-tmdb/mobile stats.png"
+            ]
+        },
+        {
+            "name": "Blog list",
+            "description": "A full stack web app for saving links to blog posts",
+            "link": "https://bloglist-5rlb.onrender.com/",
+            "repo": "https://github.com/FelixBruguera/fullstackopen/tree/main/part7/bloglist",
+            "features": [
+                {
+                    "title": "Authentication",
+                    "content": "JSON Web Token based authentication. The main content of the page is only visible to logged in users"
+                },
+                {
+                    "title": "Blog management",
+                    "content": "Users can add links to blogs, like blogs or delete the blogs they have created"
+                },
+                {
+                    "title": "Comments",
+                    "content": "Users can add comments to any blog post"
+                }
+            ],
+            "stack": [
+                "React",
+                "Express",
+                "MongoDB",
+                "Tailwind",
+                "Playwright"
+            ],
+            "icon": "/bloglist/icon.png",
+            "screenshots": [
+                "bloglist/blogs.png",
+                "bloglist/blog.png",
+                "bloglist/deleting.png",
+                "bloglist/profile.png"
+            ],
+            "mobileScreenshots": [
+                "bloglist/mobile blogs.png",
+                "bloglist/mobile blog.png",
+                "bloglist/mobile adding.png"
+            ]
+        },
+        {
+            "name": "React Shop",
+            "description": "An e-commerce music store",
+            "link": "https://react-shop-5lc.pages.dev/",
+            "repo": "https://github.com/FelixBruguera/react-shop",
+            "features": [
+                {
+                    "title": "Filtering and sorting",
+                    "content": "Filter products by category and price, sorting by price, name and category"
+                },
+                {
+                    "title": "Pagination",
+                    "content": "The API implements pagination and returns 20 items per page"
+                },
+                {
+                    "title": "Cart management",
+                    "content": "Add and remove products from your cart"
+                },
+                {
+                    "title": "Product details",
+                    "content": "Examine product details and images"
+                },
+                {
+                    "title": "Checkout and receipt",
+                    "content": "The checkout form validates credit card numbers and generates a receipt"
+                }
+            ],
+            "stack": [
+                "React",
+                "Cloudflare Functions",
+                "CSS",
+                "Vitest"
+            ],
+            "icon": "/react-shop/icon.png",
+            "screenshots": [
+                "/react-shop/product.png",
+                "/react-shop/products.png",
+                "/react-shop/product image.png",
+                "/react-shop/cart.png",
+                "/react-shop/checkout.png"
+            ],
+            "mobileScreenshots": [
+                "react-shop/mobile-product.png",
+                "react-shop/mobile-products.png",
+                "react-shop/mobile-cart.png"
+            ]
+        }
+    ],
+    "half": [
+        [
             {
-                "title": "Discovery, filters and sorting",
-                "content": "You can filter media by release year, average TMDB rating, genre, language, streaming service or keywords and sort by TMDB rating, vote count or popularity"
+                "name": "Open Chat",
+                "description": "LLM chat client with a responsive interface and local data storage",
+                "link": "https://openchat-azl.pages.dev/",
+                "repo": "https://github.com/FelixBruguera/openchat",
+                "features": [
+                    {
+                        "title": "Local data",
+                        "content": "Chats are saved locally in IndexedDB"
+                    },
+                    {
+                        "title": "Markdown Rendering",
+                        "content": "Code blocks with syntax highlighting, tables, math formulas"
+                    },
+                    {
+                        "title": "Model Selection",
+                        "content": "Choose from any model available on OpenRouter, mark your favorites, and set a default model"
+                    },
+                    {
+                        "title": "Chat Branching",
+                        "content": "Create chat branches from any message so you can explore different conversation paths"
+                    }
+                ],
+                "stack": [
+                    "React",
+                    "Tailwind",
+                    "IndexedDB"
+                ],
+                "icon": "/openchat/icon.png",
+                "screenshots": [
+                    "openchat/models.png",
+                    "openchat/code.png",
+                    "openchat/table.png"
+                ],
+                "mobileScreenshots": [
+                    "openchat/mobile-models.png",
+                    "openchat/mobile-chat.png",
+                    "openchat/mobile-sidebar.png"
+                ],
+                "width": "half"
             },
             {
-                "title": "Saving searches",
-                "content": "Save filter combinations"
-            },
-            {
-                "title": "Reviews",
-                "content": "Rate media on a 10-point scale with optional written reviews"
-            },
-            {
-                "title": "Diary",
-                "content": "Track the movies you've watch"
-            },
-            {
-                "title": "Lists",
-                "content": "Public and private media collections"
-            },
-            {
-                "title": "Watchlists",
-                "content": "A list that removes media after you log or review it"
-            },
-            {
-                "title": "Stats",
-                "content": "Charts and lists with different stats about the user's ratings and viewing habits"
+                "name": "Movie Tracker MongoDB",
+                "description": "A web app for searching, tracking and rating movies. This version uses a MongoDB sample dataset with 70k comments, 20k movies and 40k diary logs",
+                "link": "https://movietracker-flax.vercel.app/",
+                "repo": "https://github.com/FelixBruguera/movietracker",
+                "features": [
+                    {
+                        "title": "Search and Filters",
+                        "content": "You can filter movies by release year, rating, genre, language, cast or directors"
+                    },
+                    {
+                        "title": "Reviews",
+                        "content": "Rate media on a 10-point scale with optional written reviews"
+                    },
+                    {
+                        "title": "Diary",
+                        "content": "Track the movies you've watch"
+                    },
+                    {
+                        "title": "Lists",
+                        "content": "Public and private media collections"
+                    },
+                    {
+                        "title": "Stats",
+                        "content": "View your activity with charts like average rating by decade, genre and director, movies watched by year or your most watched genres, actors and directors"
+                    }
+                ],
+                "stack": [
+                    "Next",
+                    "MongoDB",
+                    "Tailwind",
+                    "Vitest",
+                    "Playwright"
+                ],
+                "icon": "/movietracker-mongodb/icon.png",
+                "screenshots": [
+                    "movietracker-mongodb/movies.png",
+                    "movietracker-mongodb/movie details.png",
+                    "movietracker-mongodb/filters.png",
+                    "movietracker-mongodb/stats.png",
+                    "movietracker-mongodb/profile.png"
+                ],
+                "mobileScreenshots": [
+                    "movietracker-mongodb/mobile-movies.png",
+                    "movietracker-mongodb/mobile-details.png",
+                    "movietracker-mongodb/mobile-filters.png",
+                    "movietracker-mongodb/mobile-reviews.png",
+                    "movietracker-mongodb/mobile-diary.png"
+                ],
+                "width": "half"
             }
         ],
-        "stack": [
-            "Hono",
-            "React",
-            "Tailwind",
-            "Sqlite",
-            "Vitest",
-            "Playwright"
-        ],
-        "icon": "/movietracker-tmdb/icon.png",
-        "screenshots": [
-            "movietracker-tmdb/wide.png",
-            "movietracker-tmdb/media.png",
-            "movietracker-tmdb/list.png",
-            "movietracker-tmdb/diary.png",
-            "movietracker-tmdb/stats.png"
+        [
+            {
+                "name": "Where's Waldo?",
+                "description": "A photo-tagging game",
+                "link": "https://wheres-waldo.felixbruguera0.workers.dev/",
+                "repo": "https://github.com/FelixBruguera/wheres-waldo",
+                "stack": [
+                    "React",
+                    "Sqlite",
+                    "Tailwind",
+                    "Vitest"
+                ],
+                "icon": "/wheres-waldo/icon.png",
+                "screenshots": [
+                    "wheres-waldo/game.png",
+                    "wheres-waldo/instructions.png",
+                    "wheres-waldo/leaderboard.png"
+                ],
+                "mobileScreenshots": [
+                    "wheres-waldo/mobile-game.png",
+                    "wheres-waldo/mobile-instructions.png",
+                    "wheres-waldo/mobile-leaderboard.png"
+                ],
+                "width": "half"
+            },
+            {
+                "name": "Memory Card",
+                "description": "A Memory Card game",
+                "link": "https://memory-18o.pages.dev/",
+                "repo": "https://github.com/FelixBruguera/memory",
+                "stack": [
+                    "React",
+                    "CSS"
+                ],
+                "icon": "/memory/icon.png",
+                "screenshots": [
+                    "memory/game.png",
+                    "memory/difficulty.png",
+                    "memory/timer.png"
+                ],
+                "mobileScreenshots": [
+                    "memory/mobile-game.png",
+                    "memory/mobile-difficulty.png"
+                ],
+                "width": "half"
+            }
         ]
-    },
-      {
-        "name": "Blog list",
-        "description": "A full stack web app for saving links to blog posts",
-        "link": "https://bloglist-5rlb.onrender.com/",
-        "repo": "https://github.com/FelixBruguera/fullstackopen/tree/main/part7/bloglist",
-        "features": [
-            {
-                "title": "Authentication",
-                "content": "JSON Web Token based authentication. The main content of the page is only visible to logged in users"
-            },
-            {
-                "title": "Blog management",
-                "content": "Users can add links to blogs, like blogs or delete the blogs they have created"
-            },
-            {
-                "title": "Comments",
-                "content": "Users can add comments to any blog post"
-            }
-        ],
-        "stack": [
-            "React",
-            "Express",
-            "MongoDB",
-            "Tailwind",
-            "Playwright"
-        ],
-        "icon": "/bloglist/icon.png",
-        "screenshots": [
-            "bloglist/blogs.png",
-            "bloglist/blog.png",
-            "bloglist/deleting.png",
-            "bloglist/profile.png"
-        ]
-    },
-        {
-        "name": "React Shop",
-        "description": "An e-commerce music store",
-        "link": "https://react-shop-5lc.pages.dev/",
-        "repo": "https://github.com/FelixBruguera/react-shop",
-        "features": [
-            {
-                "title": "Filtering and sorting",
-                "content": "Filter products by category and price, sorting by price, name and category"
-            },
-            {
-                "title": "Pagination",
-                "content": "The API implements pagination and returns 20 items per page"
-            },
-            {
-                "title": "Cart management",
-                "content": "Add and remove products from your cart"
-            },
-            {
-                "title": "Product details",
-                "content": "Examine product details and images"
-            },
-            {
-                "title": "Checkout and receipt",
-                "content": "The checkout form validates credit card numbers and generates a receipt"
-            }
-        ],
-        "stack": [
-            "React",
-            "Cloudflare Functions",
-            "CSS",
-            "Vitest"
-        ],
-        "icon": "/react-shop/icon.png",
-        "screenshots": [
-            "/react-shop/product.png",
-            "/react-shop/products.png",
-            "/react-shop/product image.png",
-            "/react-shop/cart.png",
-            "/react-shop/checkout.png"
-        ]
-    },
-    {
-        "name": "Open Chat",
-        "description": "LLM chat client with a responsive interface and local data storage",
-        "link": "https://openchat-azl.pages.dev/",
-        "repo": "https://github.com/FelixBruguera/openchat",
-        "features": [
-            {
-                "title": "Local data",
-                "content": "Chats are saved locally in IndexedDB"
-            },
-            {
-                "title": "Markdown Rendering",
-                "content": "Code blocks with syntax highlighting, tables, math formulas"
-            },
-            {
-                "title": "Model Selection",
-                "content": "Choose from any model available on OpenRouter, mark your favorites, and set a default model"
-            },
-            {
-                "title": "Chat Branching",
-                "content": "Create chat branches from any message so you can explore different conversation paths"
-            }
-        ],
-        "stack": [
-            "React",
-            "Tailwind",
-            "IndexedDB"
-        ],
-        "icon": "/openchat/icon.png",
-        "screenshots": [
-            "openchat/models.png",
-            "openchat/code.png",
-            "openchat/table.png"
-        ],
-        "width": "half"
-    },
-        {
-        "name": "Movie Tracker MongoDB",
-        "description": "A web app for searching, tracking and rating movies. This version uses a MongoDB sample dataset with 70k comments, 20k movies and 40k diary logs",
-        "link": "https://movietracker-flax.vercel.app/",
-        "repo": "https://github.com/FelixBruguera/movietracker",
-        "features": [
-            {
-                "title": "Search and Filters",
-                "content": "You can filter movies by release year, rating, genre, language, cast or directors"
-            },
-            {
-                "title": "Reviews",
-                "content": "Rate media on a 10-point scale with optional written reviews"
-            },
-            {
-                "title": "Diary",
-                "content": "Track the movies you've watch"
-            },
-            {
-                "title": "Lists",
-                "content": "Public and private media collections"
-            },
-            {
-                "title": "Stats",
-                "content": "View your activity with charts like average rating by decade, genre and director, movies watched by year or your most watched genres, actors and directors"
-            }
-        ],
-        "stack": [
-            "Next",
-            "MongoDB",
-            "Tailwind",
-            "Vitest",
-            "Playwright"
-        ],
-        "icon": "/movietracker-mongodb/icon.png",
-        "screenshots": [
-            "movietracker-mongodb/movies.png",
-            "movietracker-mongodb/movie details.png",
-            "movietracker-mongodb/filters.png",
-            "movietracker-mongodb/stats.png",
-            "movietracker-mongodb/profile.png"
-        ],
-        "width": "half"
-    },
-        {
-        "name": "Where's Waldo?",
-        "description": "A photo-tagging game",
-        "link": "https://wheres-waldo.felixbruguera0.workers.dev/",
-        "repo": "https://github.com/FelixBruguera/wheres-waldo",
-        "stack": [
-            "React",
-            "Sqlite",
-            "Tailwind",
-            "Vitest"
-        ],
-        "icon": "/wheres-waldo/icon.png",
-        "screenshots": [
-            "wheres-waldo/game.png",
-            "wheres-waldo/instructions.png",
-            "wheres-waldo/leaderboard.png"
-        ],
-        "width": "half"
-    },
-        {
-        "name": "Memory Card",
-        "description": "A Memory Card game",
-        "link": "https://memory-18o.pages.dev/",
-        "repo": "https://github.com/FelixBruguera/memory",
-        "stack": [
-            "React",
-            "CSS"
-        ],
-        "icon": "/memory/icon.png",
-        "screenshots": [
-            "memory/game.png",
-            "memory/difficulty.png",
-            "memory/timer.png"
-        ],
-        "width": "half"
-    }
-]
+    ]
+}

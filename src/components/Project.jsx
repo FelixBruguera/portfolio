@@ -1,10 +1,13 @@
-import { ExternalLink, GitForkIcon, Github } from "lucide-react"
+import { ExternalLink, LaptopMinimal, Smartphone } from "lucide-react"
 import Collapsible from "./Collapsible"
 import StackItem from "./StackItem"
 import Button from "./Button"
 import ImageCarousel from "./ImageCarousel"
+import { useState } from "react"
+import Tag from "./Tag"
 
 const Project = ({ data, width = "full" }) => {
+    const [mobileCarousel, setMobileCarousel] = useState(false)
     return (
         <div className={`${width !== "full" && "mx-auto flex-col gap-5"} w-full flex justify-between items-start`}>
             <div className={`w-full flex flex-col gap-3`}>
@@ -32,7 +35,19 @@ const Project = ({ data, width = "full" }) => {
                 </div>
                 }
             </div>
-            <ImageCarousel images={data.screenshots}/>
+            <div className="flex flex-col items-center gap-2 w-full">
+                <div className="flex items-center">
+                    <Tag onClick={() => setMobileCarousel(false)} isActive={!mobileCarousel}>
+                        <LaptopMinimal /> 
+                        <p>Desktop</p>
+                    </Tag>
+                    <Tag onClick={() => setMobileCarousel(true)} isActive={mobileCarousel}>
+                        <Smartphone /> 
+                        Mobile
+                    </Tag>
+                </div>
+                {mobileCarousel ? <ImageCarousel key={mobileCarousel} images={data.mobileScreenshots}/> : <ImageCarousel key={mobileCarousel} images={data.screenshots}/>}
+            </div>
         </div>
     )
 }
